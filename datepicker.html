@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date-Picker</title>
+
+	<!-- Date-Picker niye kaj korar somoy 3ta jquery library must be needed.
+	1.jquery-ui.css 2.jquery-ui.js 2.jquery-1.9.1.js -->
+	<!-- Example Website:http://jqueryui.com/datepicker/
+	https://www.desco.org.bd/bangla/app_online_shar/application_form_shar.php -->
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="jquery-ui.css">
+</head>
+
+	<script type="text/javascript" src="jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="jquery-ui.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+	
+	
+
+<script type="text/javascript">
+	$(function(){
+		$("#dob").datepicker({
+			// dateFormat: "dd/mm/yy",
+			dateFormat: "dd-M-yy",
+			changeMonth: true,
+			changeYear: true,
+			yearRange: "1970:2000"
+		});
+	});
+
+	$(function(){
+		$("#dob1_to","dob2_from").datepicker({
+			// dateFormat: "dd/mm/yy",
+			dateFormat: "dd-M-yy",
+			changeMonth: true,
+			changeYear: true,
+			yearRange: "1980:2018"
+		});
+	});
+
+
+	
+</script>
+<body>
+	<div class="container">
+		<div class="row col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h3>Date-Picker using jquery</h3>
+				</div>
+				<div class="card-body">
+					<div class="form-group">
+						<label for="DOB">Date Of Birth</label>
+						<input type="text" name="dob" id="dob" class="form-control">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
